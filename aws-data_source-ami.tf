@@ -3,7 +3,7 @@ data "aws_ami" "amazonlinux_ecs_optimized" {
 
   filter {
     name    = "name"
-    values  = ["*amazon-ecs-optimized*"]
+    values  = ["amzn-ami-*-amazon-ecs-optimized*"]
   }
 }
 
