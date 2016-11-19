@@ -1,5 +1,5 @@
-data "aws_caller_identity" "mc_account" { }
+data "aws_caller_identity" "account" { }
 
-output "mc_aws_account_id" {
-  value = "${data.aws_caller_identity.mc_account.account_id}"
+output "account_id" {
+  value = "${data.aws_caller_identity.account.account_id}"
 }
